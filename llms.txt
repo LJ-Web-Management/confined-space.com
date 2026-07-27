@@ -1,0 +1,29 @@
+# confined-space.com
+
+> confined-space.com offers self-paced online OSHA training covering every role on a confined space job: 3-hour Confined Space Awareness, 3-hour Permit-Required Confined Space Entry, 5-hour Confined Space Supervisor, and 6-hour Competent Person for Confined Spaces. All courses are available in English and Spanish, are mobile-friendly, and issue a certificate of completion immediately. Courses are aligned with OSHA's confined space standards: 29 CFR 1926 Subpart AA (construction) and 29 CFR 1910.146 (general industry).
+
+Confined Space Training is a subsidiary of Industrial Certified Training, LLC, and partners with HAZWOPER OSHA Training, LLC. Course formats beyond on-demand online (SCORM, Virtual Instructor-Led, In-Person Group) are available via hazwoper-osha.com.
+
+## Courses
+
+- [Confined Space Awareness Training](https://www.confined-space.com/#pricing): 3 hours, $49.99/seat. Entry-level course for general construction crews working near confined spaces — defining permit-required vs. non-permit spaces, recognizing atmospheric/engulfment/mechanical hazards, understanding entrant/attendant/supervisor roles, and basic safe work practices.
+- [Permit-Required Confined Space Entry Training](https://www.confined-space.com/#pricing): 3 hours, $59.99/seat. Course for entrants and attendants — completing and interpreting an entry permit, atmospheric testing and ventilation checks, entrant/attendant/entry-supervisor duties, and non-entry rescue and emergency procedures.
+- [Confined Space Supervisor Training](https://www.confined-space.com/#pricing): 5 hours, $69.99/seat. Course for entry supervisors and foremen — authorizing and canceling entry permits, verifying atmospheric monitoring and equipment, assessing site conditions and hazard controls, and coordinating emergency response.
+- [Competent Person for Confined Spaces Training](https://www.confined-space.com/#pricing): 6 hours, $159.99/seat. Program-oversight course for safety managers and EHS coordinators — identifying and classifying confined spaces, building and overseeing a written permit space program, rescue and emergency preparedness planning, and recordkeeping/program audits.
+
+## Resources
+
+- [Confined Space Training FAQ](https://www.confined-space.com/frequently-asked-questions/): 40+ answers covering confined space basics, permits/regulations (1926 Subpart AA vs. 1910.146), hazards/atmospheric testing/PPE, roles and responsibilities, rescue and emergency response, and course/certification details (general guidance only, not legal advice).
+
+## Other Formats
+
+- [HAZWOPER-OSHA.com — Confined Space Awareness listing](https://hazwoper-osha.com/online-courses/confined-space-awareness-training-for-construction-industry): SCORM, Virtual Instructor-Led, and In-Person Group options.
+- [HAZWOPER-OSHA.com — Permit-Required Entry listing](https://hazwoper-osha.com/online-courses/osha-permit-required-confined-space-entry-training): SCORM, Virtual Instructor-Led, and In-Person Group options.
+- [HAZWOPER-OSHA.com — Confined Space Supervisor listing](https://hazwoper-osha.com/online-courses/osha-confined-space-supervisor-training): SCORM, Virtual Instructor-Led, and In-Person Group options.
+- [HAZWOPER-OSHA.com — Competent Person listing](https://hazwoper-osha.com/online-courses/osha-competent-person-for-confined-spaces-training): SCORM, Virtual Instructor-Led, and In-Person Group options.
+- [Industrial Certified Training, LLC](https://ictraining.us/): Parent company, specializing in OSHA, EPA, and IACET-accredited training.
+
+## Contact
+
+- Phone: 1-866-429-6742
+- Email: info@hazwoper-osha.com
