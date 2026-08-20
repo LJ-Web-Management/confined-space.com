@@ -1,4 +1,4 @@
-# Confined Space Training — Landing Page
+# Confined Space Training: Landing Page
 
 Standalone marketing landing page for the 4 confined space courses on
 [HAZWOPER-OSHA.com](https://hazwoper-osha.com/): Awareness, Permit-Required Entry, Supervisor, and
@@ -9,17 +9,17 @@ Pure HTML/CSS/JS, no build step, no dependencies. Meant to be tested/previewed o
 ## Structure
 
 ```
-index.html                          — main landing page (hero, courses, curriculum, pricing, FAQ teaser)
-frequently-asked-questions/index.html — standalone FAQ resource page
-css/styles.css                      — all styling
-js/main.js                          — mobile nav toggle, FAQ accordion, pricing toggle, enroll form UX
-images/cst-logo.svg                 — site logo (navy/amber, transparent background)
+index.html                          : main landing page (hero, courses, curriculum, pricing, FAQ teaser)
+frequently-asked-questions/index.html : standalone FAQ resource page
+css/styles.css                      : all styling
+js/main.js                          : mobile nav toggle, FAQ accordion, pricing toggle, enroll form UX
+images/cst-logo.svg                 : site logo (navy/amber, transparent background)
 ```
 
 ## Current state
 
 - Static, self-contained landing page only.
-- The enroll forms are **front-end only** — they don't submit anywhere or charge anyone. Submitting just swaps in a confirmation message (see `js/main.js`).
+- The enroll forms are **front-end only**: they don't submit anywhere or charge anyone. Submitting just swaps in a confirmation message (see `js/main.js`).
 - No Stripe, no course-platform API, no auth, no database.
 - Course details (titles, prices, durations) were sourced from the live listings on hazwoper-osha.com as of 2026-07-20; confirm against the source pages before launch in case pricing changes.
 

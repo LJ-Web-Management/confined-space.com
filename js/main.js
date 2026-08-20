@@ -67,6 +67,13 @@ document.addEventListener('DOMContentLoaded', function () {
         selectCourse(link.dataset.course);
       });
     });
+
+    // Deep link support: /index.html?course=entry#pricing pre-selects a course
+    // (used by links coming in from dedicated course pages).
+    var courseParam = new URLSearchParams(window.location.search).get('course');
+    if (courseParam && pricingGrid.querySelector('.pricing-card[data-course="' + courseParam + '"]')) {
+      selectCourse(courseParam);
+    }
   }
 
   // Bulk pricing tiers (seat-count discount ladder, applied to each course's per-seat price)
@@ -176,6 +183,24 @@ document.addEventListener('DOMContentLoaded', function () {
         formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
     }
+  });
+
+  // "Which Course Do I Need?" role picker (homepage widget + dedicated page)
+  document.querySelectorAll('.role-picker').forEach(function (picker) {
+    var buttons = picker.querySelectorAll('.role-picker-btn');
+    var resultsWrap = document.querySelector(picker.dataset.resultsTarget || '.role-picker-results');
+    if (!resultsWrap) return;
+    var results = resultsWrap.querySelectorAll('.role-picker-result');
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+        results.forEach(function (r) {
+          r.classList.toggle('active', r.dataset.role === btn.dataset.role);
+        });
+        resultsWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
   });
 
 });

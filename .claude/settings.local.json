@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find \"/Users/hp/Documents/Claude Code/Hazwoper Osha Training\" -maxdepth 2 -type d | sort)"
+      "Bash(find \"/Users/hp/Documents/Claude Code/Hazwoper Osha Training\" -maxdepth 2 -type d | sort)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)"
     ]
   }
 }
