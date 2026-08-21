@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.enroll-form').forEach(function (enrollForm) {
     var seatsInput = enrollForm.querySelector('input[type="number"]');
     var formTotal = enrollForm.querySelector('.form-total');
-    var formSuccess = document.getElementById(enrollForm.dataset.successTarget);
     var basePrice = parseFloat(enrollForm.dataset.pricePerSeat);
 
     var pricingCard = enrollForm.closest('.pricing-card');
@@ -175,14 +174,12 @@ document.addEventListener('DOMContentLoaded', function () {
       updatePricing();
     }
 
-    if (formSuccess) {
-      enrollForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        enrollForm.hidden = true;
-        formSuccess.hidden = false;
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      });
-    }
+    enrollForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var seats = Math.max(1, parseInt(seatsInput ? seatsInput.value : '1', 10) || 1);
+      var courseKey = pricingCard ? pricingCard.getAttribute('data-course') : '';
+      window.location.href = 'checkout.html?course=' + encodeURIComponent(courseKey) + '&seats=' + encodeURIComponent(seats);
+    });
   });
 
   // "Which Course Do I Need?" role picker (homepage widget + dedicated page)

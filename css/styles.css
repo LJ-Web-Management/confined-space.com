@@ -265,6 +265,15 @@ table{border-collapse:collapse;width:100%;}
 .feature-card h3{font-size:1.05rem;}
 .feature-card p{font-size:.92rem;margin-bottom:0;}
 
+.cert-box{
+  display:block;
+  text-align:center;
+  padding:32px 24px;
+}
+.cert-box h3{font-size:1.05rem;margin-bottom:.5rem;}
+.cert-box p{font-size:.88rem;margin-bottom:0;}
+.cert-box .cert-box-arrow{color:var(--amber-600);font-weight:700;}
+
 /* ---------- Courses (4-course chooser) ---------- */
 .course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:40px;}
 .course-card{
@@ -309,6 +318,59 @@ table{border-collapse:collapse;width:100%;}
 .compare-table td:first-child,.compare-table th:first-child{color:var(--gray-500);font-weight:700;width:180px;}
 .compare-table tr:last-child td{border-bottom:none;}
 .compare-table td strong{color:var(--navy-900);}
+
+/* ---------- Course comparison (table on desktop, cards on narrow screens — no horizontal scroll) ---------- */
+.compare-table-wrap{overflow-x:auto;}
+.compare-table-wrap .compare-table{
+  width:100%;
+  min-width:640px;
+  border-collapse:collapse;
+  background:var(--white);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+.compare-table-wrap .compare-table th,
+.compare-table-wrap .compare-table td{
+  padding:16px 20px;
+  text-align:left;
+  border-bottom:1px solid var(--gray-200);
+  font-size:.9rem;
+}
+.compare-table-wrap thead th{
+  background:var(--navy-900);
+  color:var(--white);
+  font-size:.85rem;font-weight:700;
+  vertical-align:top;
+}
+.compare-table-wrap thead th:first-child{background:var(--navy-800);}
+.compare-table-wrap tbody td:first-child{
+  font-weight:700;color:var(--navy-800);
+  background:var(--gray-50);
+  white-space:nowrap;
+}
+.compare-table-wrap tbody tr:last-child td{border-bottom:none;}
+
+.compare-cards{display:none;}
+@media (max-width:860px){
+  .compare-table-wrap{display:none;}
+  .compare-cards{display:grid;gap:20px;}
+  .compare-card{
+    background:var(--white);
+    border:1px solid var(--gray-200);
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:var(--shadow-sm);
+  }
+  .compare-card h3{font-size:1.1rem;margin-bottom:16px;}
+  .compare-card dl{margin:0;border-top:1px solid var(--gray-100);}
+  .compare-card dl > div{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:.6rem 0;border-bottom:1px solid var(--gray-100);
+  }
+  .compare-card dt{font-weight:700;color:var(--navy-800);font-size:.85rem;}
+  .compare-card dd{margin:0;color:var(--gray-700);font-size:.85rem;text-align:right;}
+}
 
 /* ---------- Curriculum ---------- */
 .curriculum-columns{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 56px;}
@@ -616,6 +678,17 @@ table{border-collapse:collapse;width:100%;}
 .footer-legal strong{color:#dfe6f2;}
 .footer-legal a{color:var(--amber-500);font-weight:700;text-decoration:underline;}
 .footer-legal a:hover{color:#ffc233;}
+.footer-address{font-size:.85rem;color:#9aa8c7;margin-top:.75rem;margin-bottom:1em;}
+
+.footer-badges{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:16px;margin-bottom:1.4rem;}
+.footer-badges a{
+  display:flex;align-items:center;justify-content:center;
+  background:var(--white);
+  border-radius:6px;
+  padding:6px 10px;
+  height:40px;
+}
+.footer-badges img{height:100%;width:auto;display:block;}
 
 .footer-col-heading{
   font-size:.78rem;text-transform:uppercase;letter-spacing:1px;
@@ -831,6 +904,7 @@ table{border-collapse:collapse;width:100%;}
   .vs-columns{grid-template-columns:1fr;}
   .vs-divider{padding:4px 0;}
   .footer-grid{grid-template-columns:1fr 1fr;}
+  .footer-col-brand{grid-column:1 / -1;}
 }
 
 @media (max-width:480px){
