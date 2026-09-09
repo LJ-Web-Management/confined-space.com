@@ -1,6 +1,7 @@
 const STRIPE_PUBLISHABLE_KEY="pk_live_doCHB0jglD5eISjEmB1vB6mb00xIg51noK"
 // const STRIPE_PUBLISHABLE_KEY="pk_test_51KRElxBHssw16TqHLVweh7MZorffCzySrRWdwAeURnEjnjuNZ7tsIfnmcBq1px0qSGWfJ3Kl2bDQRjaCCJpEO27W005Qidmdci" // STAGING
 const API_BASE_URL="https://hazwoper-osha.com/api";
+// const API_BASE_URL="https://staging.hazwoper-osha.com/api";
 
 var courses = [
     {id: 100, code: 'awareness', name: 'Confined Space Awareness', price: 49.99},
@@ -36,4 +37,8 @@ function tierPrice(basePrice, tier) {
 
 function formatMoney(amount) {
   return Number(amount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function tierLabel(tier) {
+  return tier.min === tier.max ? String(tier.min) : tier.min + '-' + tier.max.toLocaleString('en-US');
 }

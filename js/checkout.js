@@ -254,8 +254,8 @@ document.addEventListener('DOMContentLoaded', function () {
           last_name: lastName,
           email: userEmail,
           user_name: firstName + ' ' + lastName,
-          phone: phone,
-          client: 'web'
+          user_role_id: 2,
+          phone: phone
         };
 
         var addUserRes = await fetch(apiBaseUrl + '/add_new_user', {
@@ -267,11 +267,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (addUserRes.ok) {
           var userData = await addUserRes.json();
           if (userData) {
-            customerId = userData.id || userData.user_id ||
-              (userData.data && (userData.data.id || userData.data.user_id)) ||
-              (userData.success && (userData.success.id || userData.success.user_id)) ||
-              (userData.user && (userData.user.id || userData.user.user_id)) ||
-              (userData.existing_email && (userData.existing_email)) || 0;
+            customerId = userData.user_id ||
+              (userData.data && (userData.data.user_id)) ||
+              (userData.success && (userData.success.user_id)) ||
+              (userData.user && (userData.user.user_id)) || 0;
           }
         }
       } catch (userErr) {
@@ -311,9 +310,16 @@ document.addEventListener('DOMContentLoaded', function () {
             {
               course_id: currentOrderDetails ? currentOrderDetails.courseId : 100,
               quantity: currentOrderDetails ? currentOrderDetails.seats : 1,
+              users: [
+                  {
+                      first_name: firstName,
+                      last_name: lastName,
+                      email: userEmail,
+                      user_name: ""
+                  }
+              ]
             }
-          ],
-          client: 'web'
+          ]
         };
 
         var addOrderRes = await fetch(apiBaseUrl + '/add_order', {
