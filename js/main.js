@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // Glass nav hairline: only appears once content has actually scrolled beneath it
+  var siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    var updateHeaderScrolled = function () {
+      siteHeader.classList.toggle('scrolled', window.scrollY > 8);
+    };
+    updateHeaderScrolled();
+    window.addEventListener('scroll', updateHeaderScrolled, { passive: true });
+  }
+
   // Mobile nav toggle (wired by config.js when present; guard prevents double-binding)
   var navToggle = document.getElementById('navToggle');
   var mainNav = document.getElementById('mainNav');

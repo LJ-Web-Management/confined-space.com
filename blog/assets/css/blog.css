@@ -1,26 +1,9 @@
 /* ==========================================================================
-   CONFINED-SPACE.COM BLOG STYLES (Navy #0b1f3a / Amber #f2a900 / Blue #1d5bd6)
-   ========================================================================== */
-
-:root {
-  --navy-900: #0b1f3a;
-  --navy-800: #122a4d;
-  --navy-700: #1a3a68;
-  --blue-600: #1d5bd6;
-  --amber-500: #f2a900;
-  --amber-600: #d18f00;
-  --gray-50: #f7f8fa;
-  --gray-100: #eef1f5;
-  --gray-200: #e2e6ec;
-  --gray-500: #6b7688;
-  --gray-700: #3c4657;
-  --white: #ffffff;
-  --radius: 10px;
-  --shadow-sm: 0 1px 2px rgba(11,31,58,.06),0 1px 3px rgba(11,31,58,.08);
-  --shadow-md: 0 8px 24px rgba(11,31,58,.10);
-  --shadow-lg: 0 20px 45px rgba(11,31,58,.16);
-  --max-width: 1200px;
-}
+   CONFINED-SPACE.COM BLOG STYLES
+   Tokens (--navy-900, --amber-500, --blue-600, --shadow-*, --radius, etc.)
+   come from the shared css/styles.css :root, loaded before this file —
+   do not redeclare them here, or the blog silently reverts to the old
+   theme and gets a second, competing accent color. ---------- */
 
 body.blog-page {
   background-color: var(--gray-50);
@@ -76,9 +59,10 @@ body.blog-page {
 .search-input {
   flex: 1 1 280px;
   max-width: 460px;
-  padding: 12px 18px;
+  height: 44px;
+  padding: 0 18px;
   border: 1px solid var(--gray-200);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-family: inherit;
   background-color: var(--white);
@@ -88,14 +72,15 @@ body.blog-page {
 
 .search-input:focus {
   outline: none;
-  border-color: var(--blue-600);
-  box-shadow: 0 0 0 3px rgba(29, 91, 214, 0.15);
+  border-color: var(--amber-500);
+  box-shadow: 0 0 0 3px var(--accent-tint);
 }
 
 .sort-select {
-  padding: 12px 18px;
+  height: 44px;
+  padding: 0 18px;
   border: 1px solid var(--gray-200);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-family: inherit;
   background-color: var(--white);
@@ -105,7 +90,7 @@ body.blog-page {
 
 .sort-select:focus {
   outline: none;
-  border-color: var(--blue-600);
+  border-color: var(--amber-500);
 }
 
 /* ============ POSTS GRID ============ */
@@ -132,7 +117,7 @@ body.blog-page {
 .post-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--blue-600);
+  border-color: var(--amber-600);
   text-decoration: none;
 }
 
@@ -167,7 +152,7 @@ body.blog-page {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--blue-600);
+  color: var(--amber-600);
   margin-bottom: 8px;
 }
 
@@ -180,7 +165,7 @@ body.blog-page {
 }
 
 .post-card:hover .post-card-title {
-  color: var(--blue-600);
+  color: var(--amber-600);
 }
 
 .post-card-excerpt {
@@ -194,7 +179,7 @@ body.blog-page {
 .post-card-footer {
   display: flex;
   align-items: center;
-  color: var(--blue-600);
+  color: var(--amber-600);
   font-size: 0.9rem;
   font-weight: 700;
   gap: 6px;
@@ -225,8 +210,8 @@ body.blog-page {
 }
 
 .pagination button:hover:not(:disabled) {
-  border-color: var(--blue-600);
-  color: var(--blue-600);
+  border-color: var(--amber-600);
+  color: var(--amber-600);
 }
 
 .pagination button.active {
@@ -251,7 +236,7 @@ body.blog-page {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--blue-600);
+  color: var(--amber-600);
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 24px;
@@ -267,7 +252,7 @@ body.blog-page {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--blue-600);
+  color: var(--amber-600);
   margin-bottom: 12px;
 }
 
@@ -346,20 +331,20 @@ body.blog-page {
   color: var(--navy-900);
 }
 
-.post-article-content a {
-  color: var(--blue-600);
+.post-article-content a:not(.btn) {
+  color: var(--amber-600);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.post-article-content a:hover {
+.post-article-content a:not(.btn):hover {
   color: var(--navy-900);
 }
 
 .post-article-cta {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
   color: var(--white);
-  padding: 36px 40px;
+  padding: clamp(24px,5vw,36px) clamp(20px,5vw,40px);
   border-radius: var(--radius);
   margin: 48px 0;
   text-align: center;

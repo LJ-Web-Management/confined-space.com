@@ -96,6 +96,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://confined-space.com/osha-standards-crosswalk/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://confined-space.com/employer-training-resources/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://confined-space.com/verify-certificate/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://confined-space.com/curriculum-review-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://confined-space.com/editorial-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://confined-space.com/accessibility/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://confined-space.com/privacy-policy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

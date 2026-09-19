@@ -14,6 +14,11 @@ Confined Space Training is a subsidiary of Industrial Certified Training, LLC, a
 ## Resources
 
 - [Confined Space Training FAQ](https://www.confined-space.com/frequently-asked-questions/): 40+ answers covering confined space basics, permits/regulations (1926 Subpart AA vs. 1910.146), hazards/atmospheric testing/PPE, roles and responsibilities, rescue and emergency response, and course/certification details (general guidance only, not legal advice).
+- [OSHA Standards Crosswalk](https://www.confined-space.com/osha-standards-crosswalk/): Maps each of the four courses to the specific OSHA sections it's built around (1926 Subpart AA, 1926.1207-1211, 1910.146), each linked to the official regulatory text on osha.gov.
+- [Employer Training Resources](https://www.confined-space.com/employer-training-resources/): Free, printable templates for employers: recordkeeping packet, site-specific training addendum, hands-on competency checklist, atmospheric testing signoff, PPE/retrieval signoff, rescue-plan verification checklist, retraining trigger checklist, and role-specific (entrant/attendant/supervisor/competent person) pre-entry checklists.
+- [Credential Transparency](https://www.confined-space.com/credential-transparency/): What a certificate of completion documents, and what it doesn't (not an OSHA certification, license, or endorsement).
+- [Verify a Certificate](https://www.confined-space.com/verify-certificate/): How employers can confirm a certificate is genuine via HAZWOPER OSHA Training's verification tool.
+- [Curriculum Review Policy](https://www.confined-space.com/curriculum-review-policy/) and [Editorial Policy](https://www.confined-space.com/editorial-policy/): How course content and written guidance are developed, reviewed, and corrected.
 
 ## Other Formats
 
